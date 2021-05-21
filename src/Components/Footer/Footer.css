@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.9);
+    height: 80vh;
+    color: white;
+    justify-content: space-around;
+
+}
+
+.services, .contactUs , .knowMore{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services h6:hover, .contactUs h6:hover , .knowMore h6:hover{
+    color: aqua;
+    cursor: pointer;
+}
