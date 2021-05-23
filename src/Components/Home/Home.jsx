@@ -30,7 +30,7 @@ const Home = () => {
                     <Fade left><p>
                         A landslide is defined as the movement of a mass of rock, debris, or earth down a slope. Landslides are a type of "mass wasting," which denotes any down-slope movement of soil and rock under the direct influence of gravity. The term "landslide" encompasses five modes of slope movement: falls, topples, slides, spreads, and flows. These are further subdivided by the type of geologic material (bedrock, debris, or earth). Debris flows (commonly referred to as mudflows or mudslides) and rock falls are examples of common landslide types.</p>
                     </Fade>
-                    <Fade right><img src="/landslideImg.gif" /></Fade>
+                    <Fade right><img src="/landslideImg.gif" alt="landslide "/></Fade>
                 </div>
                 <Link to={{pathname:"https://www.business-standard.com/article/current-affairs/12-indian-land-prone-to-landslides-as-climate-crisis-increases-the-risks-120100200239_1.html"}} target="_blank"><button className="btn btn-outline-light btn-lg">More About Lanslides</button></Link>
             </div>

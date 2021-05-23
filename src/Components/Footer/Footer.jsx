@@ -38,7 +38,7 @@ function Footer() {
                     <h6>Community</h6>
                     <h6>Careers</h6>
                     <h6>Brand Assests</h6>
-                    <h6></h6>
+                    <h6>Sponsors</h6>
                 </Fade>
             </div>
         </div>
