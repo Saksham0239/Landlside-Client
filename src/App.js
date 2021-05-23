@@ -9,7 +9,7 @@ import Weather from "./Components/Weather/Weather.jsx";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PrivateRoute from "./Components/PrivateRoute";
-
+import AuthRoute from "./Components/AuthRouter";
 
 
 
@@ -20,8 +20,8 @@ function App() {
       <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/signup" component={SignUp} />
+            <AuthRoute exact path="/login" component={Login} />
+            <AuthRoute exact path="/signup" component={SignUp} />
             <PrivateRoute exact path="/coloredMaps" component={ColorMaps} />
             <PrivateRoute exact path="/weather" component={Weather} />
           </Switch>
