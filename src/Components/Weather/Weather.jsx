@@ -14,7 +14,7 @@ function Weather() {
 
 
     const handleClick = async (e) => {
-        const data = await axios.get(`https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=metric`);
+        const data = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=metric`);
         // const data=await getWeatherData(city);
         console.log(data);
         setWeatherData(
