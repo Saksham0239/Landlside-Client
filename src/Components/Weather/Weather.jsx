@@ -4,6 +4,7 @@ import "./Weather.css";
 import Fade from 'react-reveal/Fade';
 import {Link} from "react-scroll";
 import Navbar from "../Navbar/CustomNavbar1";
+// import {getWeatherData} from "../../Actions/Weather/WeatherData";
 
 function Weather() {
 
@@ -13,7 +14,8 @@ function Weather() {
 
 
     const handleClick = async (e) => {
-        const data = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=metric`);
+        const data = await axios.get(`https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=metric`);
+        // const data=await getWeatherData(city);
         console.log(data);
         setWeatherData(
             data.data
@@ -38,8 +40,8 @@ function Weather() {
                         <h1 id="weather-desc" style={{ textDecoration: "underline" }}>Weather Description</h1>
                         </Fade>
                         <Fade right>
-                         <img style={{height:"8%",width:"8%"}} src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="" />
-                            <h2>{weatherData.name} , {weatherData.sys.country}</h2>
+                         <img style={{height:"8%",width:"8%"}} src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="" /> 
+                             <h2>{weatherData.name} , {weatherData.sys.country}</h2>
                             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
                                 <h4>Description : {weatherData.weather[0].description}</h4>
                             </div>
