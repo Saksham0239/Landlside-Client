@@ -9,7 +9,7 @@ export const  logout=async (data)=>{
         localStorage.removeItem("authEpics");
     }
     try{
-        const res=await axios.post("http://localhost:8000/logout",user,{
+        const res=await axios.post("https://land-slide-auth-api.herokuapp.com/logout",user,{
             headers:{
                 Authorization: `Bearer ${token}`
             }
