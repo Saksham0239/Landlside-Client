@@ -17,8 +17,8 @@ const Home = () => {
 
             <Navbar />
             <div className='hero-container' id="one">
-                {/* <img src="/img1.jpg" alt="backImg" /> */}
-                <video src='/videos/bg1.mp4' autoPlay loop muted />
+                <img src="/bg-image2.jpg" id="bg-image" alt="backImg" />
+                {/* <video src='/videos/bg1.mp4' autoPlay loop muted /> */}
                 <Jump><h1>World should be safe from natural disasters</h1></Jump>
                 <Jump><p>After a LandSlide. One more can be expected</p></Jump>
                 <Link to={{pathname:"https://www.cdc.gov/disasters/landslides.html#:~:text=Landslides%20are%20caused%20by%20disturbances,rock%2C%20earth%2C%20and%20debris."}} target="_blank"><button className="btn btn-lg btn-outline-light">Explore More</button></Link>
