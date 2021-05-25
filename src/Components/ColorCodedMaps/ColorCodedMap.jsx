@@ -39,21 +39,23 @@ function ColorCodedMap() {
             {
                 mainUrl && mainUrl.data ?<img className="map-img" src={mainUrl.data[0].moisture}  alt="moisture" />:<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             }
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Above is colour coded moisture map of India where, yellow region represent low moisture content in soil and blue region represent high moisture percentage in soil.As we go from red to yellow and yellow to blue, moisture percentage also increases.</p>
             <hr/>
             <hr />
             <h4 id="slope">Slope Map</h4>
             {
                 mainUrl && mainUrl.data ?<img className="map-img" src={mainUrl.data[0].slope}  alt="slope" />:<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             }
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Above map gives us the brief idea about the slope of India.
+Here, White region represent no slope and dark brown region represent higher slope. High intensity of brown colour represents high slope.</p>
             <hr/>
             <hr />
             <h4 id="output">Output Map</h4>
             {
                 mainUrl && mainUrl.data ?<img className="map-img" src={mainUrl.data[0].output}  alt="output" />:<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             }
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Above colour coded map gives us the information about landlide prone regions in India. 
+Here, yellow region with red & blue dots represent area which is more prone to landslide & have safety-factor less then 1 and 0.75 respectively. Green region represent area with no landslide risk with safety-factor more then 1.</p>
             <hr/>
         </div>
         </>
