@@ -1,0 +1,13 @@
+#bg{
+    background-color: white;
+    color: black ;
+    padding: 20px;
+}
+
+h1,h3,h5,p,ul,li{
+    color: black ;
+    margin: 10px;
+}
+p{
+    text-align: left;
+}

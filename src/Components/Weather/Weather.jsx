@@ -27,7 +27,7 @@ function Weather() {
             <img id="bg-img" src="/web-img-2.jpg" alt="" />
             <Fade left>
             <div className="bg">
-                <h1>Weather Page</h1>
+                <h1 style={{color:"white"}}>Weather Page</h1>
                 <input type="text" className="form-control" name="city" id="city" onChange={(e) => { setCity(e.target.value) }} value={city}
                     placeholder="City Name" />
                 <Link to="weather-desc"><button className="btn btn-outline-light btn-lg mt-3 mb-3" onClick={handleClick}>Double Click to view weather</button></Link>
@@ -37,7 +37,7 @@ function Weather() {
                 {weatherData ?
                     <>
                         <Fade top>
-                        <h1 id="weather-desc" style={{ textDecoration: "underline" }}>Weather Description</h1>
+                        <h1 id="weather-desc" style={{ textDecoration: "underline",color:"white" }}>Weather Description</h1>
                         </Fade>
                         <Fade right>
                          <img style={{height:"8%",width:"8%"}} src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="" /> 

@@ -20,7 +20,7 @@ function CustomNavbar() {
                        <ScrollLink to="one"> <li>Home</li></ScrollLink>
                         <ScrollLink to="landslides"><li>Report</li></ScrollLink>
                         <ScrollLink to="weather"><li>Weather</li></ScrollLink>
-                        <ScrollLink to="factors"><li>Lanslides</li></ScrollLink>
+                        <ScrollLink to="factors"><li>Maps</li></ScrollLink>
                     </ul>
                 </div>
                 <div className="right">

@@ -45,5 +45,5 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     color: aqua;
-    font-size: x-large;
+    text-decoration: underline;
 }
