@@ -10,14 +10,13 @@ import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 
 
-
 const Home = () => {
     return (
         <>
 
             <Navbar />
             <div className='hero-container' id="one">
-                <img src="/bg-image2.jpg" id="bg-image" alt="backImg" />
+                <img src="/original-img.jpg" id="bg-image" alt="/bg-newImg2.jpg" />
                 {/* <video src='/videos/bg1.mp4' autoPlay loop muted /> */}
                 <Jump><h1>World should be safe from natural disasters</h1></Jump>
                 <Jump><p>After a LandSlide. One more can be expected</p></Jump>

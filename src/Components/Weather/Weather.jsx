@@ -24,7 +24,7 @@ function Weather() {
     return (
         <>
             <Navbar />
-            <img id="bg-img" src="/weatherweb.jpg" alt="" />
+            <img id="bg-img" src="/web-img-2.jpg" alt="" />
             <Fade left>
             <div className="bg">
                 <h1>Weather Page</h1>
