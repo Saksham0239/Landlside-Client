@@ -16,7 +16,7 @@ const Home = () => {
 
             <Navbar />
             <div className='hero-container' id="one">
-                <img src="/original-img.jpg" id="bg-image" alt="/bg-newImg2.jpg" />
+                <img src="/bg-newImg2.jpg" id="bg-image"/>
                 {/* <video src='/videos/bg1.mp4' autoPlay loop muted /> */}
                 <Jump><h1>World should be safe from natural disasters</h1></Jump>
                 <Jump><p>After a LandSlide. One more can be expected</p></Jump>
