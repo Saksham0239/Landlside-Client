@@ -43,12 +43,16 @@ function Weather() {
                          <img style={{height:"8%",width:"8%"}} src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="" /> 
                              <h2>{weatherData.name} , {weatherData.sys.country}</h2>
                             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-                                <h4>Description : {weatherData.weather[0].description}</h4>
+                                <h4 ><span style={{color:"yellowgreen"}}>Description : </span>{weatherData.weather[0].description}</h4>
                             </div>
                             <div style={{ display: "flex", flexFlow: "column", alignItems: "center" }}>
-                                <h4>Current Temprature : {weatherData.main.temp} C</h4>
-                                <h4>Humidity : {weatherData.main.humidity}%</h4>
-                                <h4>Wind Speed: {weatherData.wind.speed}Km/h</h4>
+                                <h4><span style={{color:"yellow"}}>Current Temprature</span> : {weatherData.main.temp} C</h4>
+                                <h4><span style={{color:"lightblue"}}>Feels Like : </span>{weatherData.main.feels_like} C</h4>
+                                <h4><span style={{color:"lightblue"}}>Minimum Temprature : </span>{weatherData.main.temp_min} C</h4>
+                                <h4><span style={{color:"red"}}>Maximum Temprature: </span>{weatherData.main.temp_max} C</h4>
+                                <h4><span style={{color:"lightblue"}}>Humidity : </span>{weatherData.main.humidity}%</h4>
+                                <h4><span style={{color:"wheat"}}>Wind Speed: </span>{weatherData.wind.speed} mph</h4>
+                                <h4><span style={{color:"brown"}}>Gust: </span>{weatherData.wind.gust? weatherData.wind.gust:0} mph</h4>
                             </div>
                         </Fade>
 

@@ -2,13 +2,17 @@ import React from 'react';
 import Navbar from "../Navbar/CustomNavbar1.jsx";
 import "./styles.css";
 import Footer from "../Footer/Footer.jsx"
+import Fade from 'react-reveal/Fade';
+
 
 function AboutLandSlides() {
     return (
         <>
+        <img src="/bg-newImg.jpg" id="article-bg" alt="bg-img-1"/>
             <Navbar />
             <div className="container-fluid" id="bg" style={{ paddingTop: "10%" }}>
                 <h1>Landslides</h1>
+                <Fade top cascade big>
                 <div>
                     <h3>What causes landslides and debris flows</h3>
                     <p>Landslides are caused by disturbances in the natural stability of a slope. They can accompany heavy rains or follow droughts, earthquakes, or volcanic eruptions. Mudslides develop when water rapidly accumulates in the ground and results in a surge of water-saturated rock, earth, and debris. Mudslides usually start on steep slopes and can be activated by natural disasters. Areas where wildfires or human modification of the land have destroyed vegetation on slopes are particularly vulnerable to landslides during and after heavy rains.</p>
@@ -79,6 +83,7 @@ function AboutLandSlides() {
 
                     </ul>
                 </div>
+                </Fade>
             </div>
             <Footer />
         </>

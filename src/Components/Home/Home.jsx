@@ -31,7 +31,7 @@ const Home = () => {
                     </Fade>
                     <Fade right><img src="/landslideImg.gif" alt="landslide "/></Fade>
                 </div>
-                <Link to={{pathname:"https://www.business-standard.com/article/current-affairs/12-indian-land-prone-to-landslides-as-climate-crisis-increases-the-risks-120100200239_1.html"}} target="_blank"><button className="btn btn-outline-light btn-lg">More About Lanslides</button></Link>
+                <Link to="/report"><button className="btn btn-outline-light btn-lg">Report</button></Link>
             </div>
 
             <div className="weather" id="weather">

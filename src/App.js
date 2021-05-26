@@ -10,7 +10,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PrivateRoute from "./Components/PrivateRoute";
 import AuthRoute from "./Components/AuthRouter";
-import Article1 from "./Components/Articles/AboutLandSlides.jsx"
+import Article1 from "./Components/Articles/AboutLandSlides.jsx";
+import Report from "./Components/Articles/IndianLanslides.jsx";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <PrivateRoute exact path="/coloredMaps" component={ColorMaps} />
             <PrivateRoute exact path="/weather" component={Weather} />
             <Route exact path="/exploreMore" component={Article1} />
+            <Route exact path="/report" component={Report} />
           </Switch>
       </BrowserRouter>
     </div>
